@@ -3,8 +3,8 @@ name = "code-review-env"
 version = "0.1.0"
 description = "OpenEnv Code Review Environment"
 authors = [
-    { name = "Zaid" }
-    { name = "Adnan" }
+    { name = "Zaid" },
+    { name = "Adnan" },
     { name = "Taheer" }
 ]
 dependencies = [
