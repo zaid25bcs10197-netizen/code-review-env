@@ -1,0 +1,132 @@
+[
+  {
+    "code": "int a = 5\nSystem.out.println(a);",
+    "bug_present": "yes",
+    "issue_type": "syntax_error",
+    "action": "reject",
+    "line_numbers": [1],
+    "difficulty": "easy"
+  },
+  {
+    "code": "int x = 10;\nint y = 0;\nint z = x / y;",
+    "bug_present": "yes",
+    "issue_type": "runtime_error",
+    "action": "reject",
+    "line_numbers": [3],
+    "difficulty": "easy"
+  },
+  {
+    "code": "int a = 5;\nint b = 10;\nSystem.out.println(a + b);",
+    "bug_present": "no",
+    "issue_type": "none",
+    "action": "approve",
+    "line_numbers": [],
+    "difficulty": "easy"
+  },
+  {
+    "code": "for(int i = 0; i < 5; i++)\n{\nSystem.out.println(i)\n}",
+    "bug_present": "yes",
+    "issue_type": "syntax_error",
+    "action": "reject",
+    "line_numbers": [3],
+    "difficulty": "easy"
+  },
+  {
+    "code": "int sum = 0;\nfor(int i = 1; i <= 5; i++) {\nsum += i;\n}\nSystem.out.println(sum);",
+    "bug_present": "no",
+    "issue_type": "none",
+    "action": "approve",
+    "line_numbers": [],
+    "difficulty": "easy"
+  },
+
+  {
+    "code": "int[] arr = {1,2,3,4,5};\nfor(int i = 0; i <= arr.length; i++) {\nSystem.out.println(arr[i]);\n}",
+    "bug_present": "yes",
+    "issue_type": "runtime_error",
+    "action": "request_changes",
+    "line_numbers": [2],
+    "difficulty": "medium"
+  },
+  {
+    "code": "int n = 5;\nint fact = 1;\nfor(int i = 1; i < n; i++) {\nfact *= i;\n}\nSystem.out.println(fact);",
+    "bug_present": "yes",
+    "issue_type": "logic_error",
+    "action": "request_changes",
+    "line_numbers": [3],
+    "difficulty": "medium"
+  },
+  {
+    "code": "int a = 10;\nif(a = 5) {\nSystem.out.println(\"Equal\");\n}",
+    "bug_present": "yes",
+    "issue_type": "logic_error",
+    "action": "request_changes",
+    "line_numbers": [2],
+    "difficulty": "medium"
+  },
+  {
+    "code": "int[] arr = {1,2,3};\nSystem.out.println(arr[2]);",
+    "bug_present": "no",
+    "issue_type": "none",
+    "action": "approve",
+    "line_numbers": [],
+    "difficulty": "medium"
+  },
+  {
+    "code": "int sum = 0;\nfor(int i = 0; i < 5; i++) {\nif(i % 2 == 0)\nsum += i;\n}\nSystem.out.println(sum);",
+    "bug_present": "yes",
+    "issue_type": "style_issue",
+    "action": "request_changes",
+    "line_numbers": [3,4],
+    "difficulty": "medium"
+  },
+
+  {
+    "code": "int[] arr = {1,2,3};\nfor(int i = 0; i <= arr.length; i++) {\nif(arr[i] % 2 == 0) {\nSystem.out.println(arr[i]);\n}\n}",
+    "bug_present": "yes",
+    "issue_type": "runtime_error",
+    "action": "reject",
+    "line_numbers": [2],
+    "difficulty": "hard"
+  },
+  {
+    "code": "int n = 5;\nint sum = 0;\nfor(int i = 1; i <= n; i++) {\nif(i == 3) continue;\nsum += i;\n}\nSystem.out.println(sum);",
+    "bug_present": "yes",
+    "issue_type": "logic_error",
+    "action": "request_changes",
+    "line_numbers": [4],
+    "difficulty": "hard"
+  },
+  {
+    "code": "int a = 10;\nint b = 20;\nif(a > b) {\nSystem.out.println(\"A is greater\");\n} else if(a > b) {\nSystem.out.println(\"B is greater\");\n}",
+    "bug_present": "yes",
+    "issue_type": "logic_error",
+    "action": "request_changes",
+    "line_numbers": [5],
+    "difficulty": "hard"
+  },
+  {
+    "code": "int[] arr = {1,2,3,4};\nint max = 0;\nfor(int i = 0; i < arr.length; i++) {\nif(arr[i] > max) {\nmax = arr[i];\n}\n}\nSystem.out.println(max);",
+    "bug_present": "yes",
+    "issue_type": "logic_error",
+    "action": "request_changes",
+    "line_numbers": [2],
+    "difficulty": "hard"
+  },
+  {
+    "code": "int x = 5;\nint y = 10;\nint z = x + y;\nSystem.out.println(z);",
+    "bug_present": "no",
+    "issue_type": "none",
+    "action": "approve",
+    "line_numbers": [],
+    "difficulty": "hard"
+  },
+  {
+    "code": "int[] arr = {1,2,3};\nSystem.out.println(arr[arr.length]);",
+    "bug_present": "yes",
+    "issue_type": "runtime_error",
+    "action": "reject",
+    "line_numbers": [2],
+    "difficulty": "hard"
+  }
+]

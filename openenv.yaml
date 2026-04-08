@@ -1,0 +1,38 @@
+# OpenEnv configuration file
+name: code-review-env
+version: 1.0.0
+entrypoint: env.environment:CodeReviewEnv
+
+observation_space:
+  type: object
+  properties:
+    code:
+      type: string
+    step:
+      type: integer
+    previous_action:
+      type: object
+
+action_space:
+  type: object
+  properties:
+    bug_present:
+      type: string
+    issue_type:
+      type: string
+    action:
+      type: string
+    line_numbers:
+      type: array
+      items:
+        type: integer
+
+reward:
+  type: float
+  min: 0.0
+  max: 1.0
+
+tasks:
+  - name: easy
+  - name: medium
+  - name: hard

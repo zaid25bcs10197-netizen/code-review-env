@@ -1,12 +1,3 @@
----
-title: Code Review Env
-emoji: 👁
-colorFrom: indigo
-colorTo: green
-sdk: docker
-pinned: false
-license: mit
-short_description: OpenEnv environment for evaluating AI code reviews.
----
+# Code Review Environment
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+This project provides a code review environment.
