@@ -4,10 +4,16 @@ version = "0.1.0"
 description = "OpenEnv Code Review Environment"
 authors = [
     { name = "Zaid" }
+    { name = "Adnan" }
+    { name = "Taheer" }
 ]
 dependencies = [
     "fastapi",
     "uvicorn",
     "pydantic",
-    "openai"
+    "openai",
+    "openenv>=0.2.0"
 ]
+
+[project.scripts]
+server = "app:app"
