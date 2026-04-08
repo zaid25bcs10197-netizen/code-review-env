@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "code-review-env"
 version = "0.1.0"
@@ -12,8 +16,9 @@ dependencies = [
     "uvicorn",
     "pydantic",
     "openai",
-    "openenv>=0.2.0"
+    "openenv>=0.1.13"
 ]
+requires-python = ">=3.10"
 
 [project.scripts]
-server = "app:app"
+server = "server.app:main"
